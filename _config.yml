@@ -1,8 +1,8 @@
 # Site settings
-title: Philipp Neugebauer's blog
+title: Philipp Neugebauer's developer blog
 email: ppn@philippneugebauer.net
 description: >
-  Rails enthusiast,
+  Rails and Git enthusiast,
   Java developer,
   Database engineer
 baseurl: "" # the subpath of your site, e.g. /blog/
