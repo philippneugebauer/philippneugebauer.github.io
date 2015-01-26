@@ -12,5 +12,5 @@ github_username:  philippneugebauer
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge
 paginate: 5
