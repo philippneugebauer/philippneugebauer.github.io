@@ -10,7 +10,7 @@ url: "http://philippneugebauer.net" # the base hostname & protocol for your site
 twitter_username: ppneugebauer
 github_username:  philippneugebauer
 
-#highlighter: rouge
-
 # Build settings
 markdown: kramdown
+highlighter: rouge
+paginate: 5
