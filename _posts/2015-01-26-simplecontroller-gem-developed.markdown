@@ -13,4 +13,4 @@ published at [SimpleController GitHub Repo](www.github.com/philippneugebauer/Sim
 Although there are up to now just very simple controller methods supported,
 I already could improve the CodeClimate rating of three controllers from C to A.
 
-I appreciate any kind of feedback, either via mail or on [Github](www.github.com/philippneugebauer/SimpleController/issues).
+I appreciate any kind of feedback, either via mail or on [Github](https://github.com/philippneugebauer/SimpleController/issues).
