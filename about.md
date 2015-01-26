@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm a master's student in Information Systems at Otto-Friedrich-University of Bamberg.
+I already received my bachelor's degree from there and went abroad for one year to Free University of Bozen-Bolzano.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I'm mostly interested in software development, especially Ruby on Rails and Java.
+Furthermore, I'm going to write my master's thesis about Cloud databases.
