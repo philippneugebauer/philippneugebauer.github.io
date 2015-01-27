@@ -12,4 +12,8 @@ layout: default
     {{ content }}
   </article>
 
+  <hr><br/>
+
+  {% webmentions page.url | prepend: site.baseurl %}
+
 </div>

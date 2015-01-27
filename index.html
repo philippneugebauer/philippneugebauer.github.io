@@ -14,8 +14,10 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-          {{ post.excerpt }}
-          <a href="{{ post.url }}">Read more...</a><br><br>
+        {{ post.excerpt }}
+
+        <h4><a href="{{ post.url }}" class="btn btn-default">Read more...</a>&nbsp;&nbsp;<span class="label label-primary">Webmention Count: <span class="badge">{% webmention_count page.url | prepend: site.baseurl %}</span></span></h4>
+        <br>
       </li>
     {% endfor %}
   </ul>
