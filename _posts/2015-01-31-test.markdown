@@ -1,8 +1,0 @@
----
-layout: post
-title:  "SimpleController gem developed"
-date:   2015-01-31 20:36:00
-categories: test
----
-
-teststsetsetsetes
