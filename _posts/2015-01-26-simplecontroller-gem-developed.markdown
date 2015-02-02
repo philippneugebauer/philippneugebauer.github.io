@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SimpleController gem developed"
+title:  SimpleController gem developed
 date:   2015-01-26 23:55:00
 categories: rails gem simplecontroller codeclimate
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Solve Yajl Liquid Exception"
+title:  Solve Yajl Liquid Exception
 date:   2015-01-26 20:00:00
 categories: yajl windows liquid_execption
 ---
