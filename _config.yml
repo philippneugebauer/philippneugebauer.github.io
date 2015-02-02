@@ -5,8 +5,8 @@ description: >
   Rails and Git enthusiast,
   Java developer,
   Database engineer
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://philippneugebauer.net # the base hostname & protocol for your site
+baseurl: ""
+url: http://philippneugebauer.net
 twitter_username: ppneugebauer
 github_username:  philippneugebauer
 
