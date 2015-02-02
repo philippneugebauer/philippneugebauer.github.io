@@ -1,6 +1,6 @@
 <div class="gpgc-all-comments" id="all-comments"></div>
 <div class="gpgc-actions">
-	<span class="gpgc-action" id="load-comments-button"></span>
+	<span id="load-comments-button"></span>
 	<span class="gpgc-action" id="leave-comment-link"></span>
 </div>
 <script>
@@ -48,13 +48,7 @@ function updateCommentActions(allComments)
 	var allCommentsHtml = "";
 	var loadCommentsHtml = "";
 	var leaveCommentUrl = "";
-	if ({{ site.data.gpgc.use_show_action}}) {
-		var commentOrComments = allComments.length == 1 ? "Comment" : "Comments";
-		loadCommentsHtml = '<button class="gpgc-show" onclick="presentAllComments(CommentsArray)">Show ' + allComments.length + ' ' + commentOrComments + '</button>';
-	}
-	else {
-		allCommentsHtml = formatAllComments(CommentsArray);
-	}
+	allCommentsHtml = formatAllComments(CommentsArray);
 	if (allComments.length === 0) {
 		allCommentsHtml = '<p class="gpgc-no-comments">No comments</p>';
 		loadCommentsHtml = "";
