@@ -76,7 +76,7 @@ function formatComment(userAvatarUrl, userHtmlUrl, userLogin, commentBodyHtml, c
 	var commentDate = new Date(commentTimeStamp);
 	var shortMonth = ShortMonthForIndex[commentDate.getMonth()];
 	var commentHtml = '<table class="panel panel-default">';
-	commentHtml += '<tr><td style="vertical-align:top;"><img class="gpgc-avatar" src="' + userAvatarUrl + '" height="42" /></td>';
+	commentHtml += '<tr><td style="vertical-align:top;"><img class="gpgc-avatar" src="' + userAvatarUrl + '" height="80" /></td>';
 	commentHtml += '<td width="100%"><div class="panel panel-default nopadding"><div class="panel-heading"><a href="' + userHtmlUrl + '">' + userLogin + '</a> commented on '+ commentDate.getDate() + ' ' + shortMonth + ' ' + commentDate.getFullYear()+ '</div>';
 	commentHtml += '<div class="panel-body">' + commentBodyHtml + '</div></div></td></tr></table>';
 	return commentHtml;
