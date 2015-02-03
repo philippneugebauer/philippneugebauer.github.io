@@ -57,29 +57,28 @@ function updateCommentActions(allComments)
 	else {
 		leaveCommentUrl = allComments[allComments.length - 1].html_url;
 	}
-	var leaveCommentsHtml = '<a class="gpgc-leave" href="' + leaveCommentUrl + '">Leave a comment</a>';
-	updateCommentDivs(allCommentsHtml, loadCommentsHtml, leaveCommentsHtml);
+	var leaveCommentsHtml = '<a class="glyphicon glyphicon-pencil" href="' + leaveCommentUrl + '">Comment</a>';
+	updateCommentDivs(allCommentsHtml, leaveCommentsHtml);
 }
 function presentAllComments(allComments) {
 	allCommentsHtml = formatAllComments(allComments);
-	updateCommentDivs(allCommentsHtml, "", null);
+	updateCommentDivs(allCommentsHtml, null);
 }
 function formatAllComments(allComments) {
-	var allCommentsHtml = '';
+	var allCommentsHtml = '<div class="panel panel-default">';
 	for (var i = 0; i < allComments.length; i++) {
 		var user = allComments[i].user;
 		allCommentsHtml += formatComment(user.avatar_url, user.html_url, user.login, allComments[i].body_html, allComments[i].updated_at);
 	}
-	return allCommentsHtml;
+	return allCommentsHtml + '</div>';
 }
 function formatComment(userAvatarUrl, userHtmlUrl, userLogin, commentBodyHtml, commentTimeStamp) {
 	var commentDate = new Date(commentTimeStamp);
 	var shortMonth = ShortMonthForIndex[commentDate.getMonth()];
-	var commentHtml = '<div class="gpgc-comment">';
-	commentHtml += '<a href="' + userHtmlUrl + '"><img class="gpgc-avatar" src="' + userAvatarUrl + '" height="42" />' + userLogin + '</a> ';
-	commentHtml += '<small>on ' + commentDate.getDate() + ' ' + shortMonth + ' ' + commentDate.getFullYear() + '</small>';
-	commentHtml += '<div class="gpgc-comment-contents">' + commentBodyHtml + '</div>';
-	commentHtml += '</div>';
+	var commentHtml = '<table class="panel panel-default">';
+	commentHtml += '<tr><td style="vertical-align:top;"><img class="gpgc-avatar" src="' + userAvatarUrl + '" height="42" /></td>';
+	commentHtml += '<td width="100%"><div class="panel panel-default nopadding"><div class="panel-heading"><a href="' + userHtmlUrl + '">' + userLogin + '</a> commented on '+ commentDate.getDate() + ' ' + shortMonth + ' ' + commentDate.getFullYear()+ '</div>';
+	commentHtml += '<div class="panel-body">' + commentBodyHtml + '</div></div></td></tr></table>';
 	return commentHtml;
 }
 function getGitHubApiRequestWithCompletion(url, completion)
@@ -93,10 +92,9 @@ function getGitHubApiRequestWithCompletion(url, completion)
 	};
 	gitHubRequest.send();
 }
-function updateCommentDivs(allCommentsHtml, loadCommentsHtml, leaveCommentsHtml)
+function updateCommentDivs(allCommentsHtml, leaveCommentsHtml)
 {
 	if (allCommentsHtml != null) document.getElementById("all-comments").innerHTML = allCommentsHtml;
-	if (loadCommentsHtml != null) document.getElementById("load-comments-button").innerHTML = loadCommentsHtml;
 	if (leaveCommentsHtml != null) document.getElementById("leave-comment-link").innerHTML = leaveCommentsHtml;
 }
 findAndCollectComments("{{ site.data.gpgc.repo_owner }}", "{{ site.data.gpgc.repo_name }}", "{{ include.post_title }}");
