@@ -34,9 +34,9 @@ layout: default
         </li>
 
         {% for page in (1..paginator.total_pages) %}
-          <li><span aria-hidden="true">
+          <li class={% if page == paginator.page %}"active"{% endif %}><span aria-hidden="true">
             {% if page == paginator.page %}
-              <em>{{ page }}</em>
+              {{ page }}
             {% elsif page == 1 %}
               <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
             {% else %}
