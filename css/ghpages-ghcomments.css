@@ -9,3 +9,9 @@
 .gpgc-no-comments {
 	text-align: center;
 }
+
+.gpgc-action {
+ display: block;
+ padding: 1rem;
+ text-align: center;
+}
