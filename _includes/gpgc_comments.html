@@ -57,7 +57,7 @@ function updateCommentActions(allComments)
 	else {
 		leaveCommentUrl = allComments[allComments.length - 1].html_url;
 	}
-	var leaveCommentsHtml = '<a class="glyphicon glyphicon-pencil" href="' + leaveCommentUrl + '">Comment</a>';
+	var leaveCommentsHtml = '<a class="btn btn-default glyphicon glyphicon-pencil" href="' + leaveCommentUrl + '">Comment</a>';
 	updateCommentDivs(allCommentsHtml, leaveCommentsHtml);
 }
 function presentAllComments(allComments) {
