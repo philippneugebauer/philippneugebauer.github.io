@@ -13,5 +13,5 @@ which seemed to be a great opportunity to resolve all my problems and also provi
 It allows to easily compile required gems and to install it on all platforms. Although I'm still struggling with the setup and I
 reported an issue to the gem developers, I just can recommend this great gem to you.
 
-While struggling with Rake Compiler Dev Box, I also encountered [this information](http://kvz.io/blog/2013/01/16/vagrant-tip-keep-virtualbox-guest-additions-in-sync/)
-useful to avoid the annyoing update warning of vagrant.
+While struggling with Rake Compiler Dev Box, I also encountered [this useful information](http://kvz.io/blog/2013/01/16/vagrant-tip-keep-virtualbox-guest-additions-in-sync/)
+to avoid the annyoing update warning of vagrant.
