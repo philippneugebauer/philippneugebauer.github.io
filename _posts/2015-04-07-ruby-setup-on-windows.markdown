@@ -12,7 +12,7 @@ Afterwards, follow the [instructions](https://github.com/oneclick/rubyinstaller/
 
 Finally, execute the following commands and then start developing:
 
-```
+```ruby
 gem update --system
 gem install bundler
 bundle
