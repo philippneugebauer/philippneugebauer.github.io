@@ -8,7 +8,7 @@ categories: Jekyll Automation Post File Generation
 All the time, I was really annoyed about the blog post creation in Jekyll when I needed to create a new file
 and then to rename it to `day-title.markdown`. Today, I just searched for a better solution and found this 
 [great approach](http://arjanvandergaag.nl/blog/creating-new-jekyll-posts.html)
-which I slithly adapted to my needs.
+which I slightly adapted to my needs.
 
 Because I'm not satisfied by the syntax of the post generation through the parameter passing with Rake, 
 I will do in the future further investigation to solve it. For now, it's fine and better than to create post files manually.
