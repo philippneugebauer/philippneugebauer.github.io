@@ -20,7 +20,7 @@ The other possible solution compared to the environment variable passing would b
 	task :post, [:title] do |task, args|
   		title = args.title
 
-It is then called with `rake post["Title"]`. Compared to the to the environment variable solution much uglier it is much uglier as you can see:
+It is then called with `rake post["Title"]`. Compared to the to the environment variable solution it is much uglier as you can see:
 
 	task :post do
 		title = ENV['title']
