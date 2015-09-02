@@ -14,3 +14,5 @@ although I was able to successfully query my database with this query.
 After spending hours to identify the problem and to find a solution,
 I just restarted my system. That fixed everything ...
 
+Update: Another thing you should looking for are reserved keywords like `order` in MySQL which must be escaped by ```.
+
