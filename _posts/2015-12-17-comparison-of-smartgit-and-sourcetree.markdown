@@ -26,4 +26,9 @@ I mostly use the command line for simple stuff, but I prefer gui tools for file 
 
 The code to demonstrate my findings is published in this [GitHub repository](https://github.com/philippneugebauer/git_gui_test).
 
+Since both tools have their pros and cons, there is no best tool which outperforms the other tool.
+In consequence, you should select the best fitting tool based on my findings and your impression.
+A free license in a commercial environment leads to the selection of `SourceTree`, while an important
+support for text change displays favors the application of `SmartGit`.
+
 Do you know other important factors I didn't consider? Do some points need to be clarified?
