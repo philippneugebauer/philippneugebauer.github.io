@@ -9,6 +9,7 @@ baseurl: ""
 url: http://blog.philippneugebauer.net
 twitter_username: ppneugebauer
 github_username:  philippneugebauer
+permalink: "/:title"
 
 # Build settings
 markdown: kramdown
