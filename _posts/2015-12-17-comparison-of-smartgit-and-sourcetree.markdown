@@ -5,13 +5,14 @@ date: 2015-12-17 09:49:18 +1100
 categories: git gui smartgit sourcetree comparison 
 ---
 
-UPDATE 29.01.2016:
-Bad hunk button accessibility for big changes in SourceTree!
-
-<br>
-
+UPDATE 29.01.2016!
 This blog post approaches the comparison of the git gui tools `SmartGit` 7.0.3 and `SourceTree` 1.6.23.0 on Windows.
 I mostly use the command line for simple stuff, but I prefer gui tools for file merging and the faster separation of commits through `git add -p`. The comparison of both tools is divided into different categories to better highlight each's adavantages and disadvantages and represented in the following table.
+
+<hline>
+UPDATE 29.01.2016:
+Bad hunk button accessibility for big changes in SourceTree!
+<hline>
 
 ||SmartGit|SourceTree|
 |-------|------|
