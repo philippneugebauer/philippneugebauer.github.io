@@ -9,11 +9,11 @@ This post presents and highlights useful and probably important tools for writin
 The tools are categorized in the following to allow the simple finding of appropriate tools for your thesis.
 In general, the posts explains only existing methods from other authors so that I also reference my sources.
 
-** MISQ Style **
+## MISQ Style
 
-First, I needed to adopt the style of [MISQ](http://www.misq.org/) for my thesis. Luckily, Ryan Schützler created a wonderful [template](http://www.schuetzler.net/blog/latex-icis-template/) for the easy adoption. This template requires the usage of ´biber´ instead of ´bibtex´ for the bibliography management. ´biber´ enables simple changes of citation styles and reuses the ´bibtex´ infrastructure so that only slight changes must be conducted. In detail, [[1]](https://de.sharelatex.com/learn/Biblatex_citation_styles) presents ´biber´ and the different citation styles. [[2]](https://verbosus.com/bibtex-style-examples.html?lang=en) provides a great overview on the different ´bibtex´ styles which I found very helpful when they were missing.
+First, I needed to adopt the style of [MISQ](http://www.misq.org/) for my thesis. Luckily, Ryan Schützler created a wonderful [template](http://www.schuetzler.net/blog/latex-icis-template/) for the easy adoption. This template requires the usage of `biber` instead of `bibtex` for the bibliography management. `biber` enables simple changes of citation styles and reuses the `bibtex` infrastructure so that only slight changes must be conducted. In detail, [[1]](https://de.sharelatex.com/learn/Biblatex_citation_styles) presents `biber` and the different citation styles. [[2]](https://verbosus.com/bibtex-style-examples.html?lang=en) provides a great overview on the different `bibtex` styles which I found very helpful when they were missing.
 
-** Font Change **
+## Font Change
 
 I never liked the default font style of LaTeX and even a particular font was prescribed for my thesis.
 Unfortunately, font change handling can be quite complex since many side-effects must be considered.
@@ -30,13 +30,13 @@ Furthermore, the url font must be adapted [[4]](http://tex.stackexchange.com/que
 
     \urlstyle{\sfdefault}
 
-** Booktabs **
+## Booktabs
 
 Although many people consider the creation of tables simple, many mistakes can be done, even though the look of tables can be easily improved. The booktabs package for LaTeX is a good and simple way for improving the look, understanding and speed of information adoption. I found a great [guide](https://www.inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf) from [Markus Püschel](www.ece.cmu.edu/~pueschel) with further and detailled information. Restrictively, dashed separation lines were considered as appropriate, but they shouldn't be realized with the `arydshline` package. It introduces problems with the `booktabs` package [[5]](http://tex.stackexchange.com/a/267349/77450), seems to break their space alignment [[6]](http://tex.stackexchange.com/questions/257912/longtable-duplicate-separator-at-page-break#comment618493_257912) and even the loading of the package can lead to compilation errors [[8]](http://tex.stackexchange.com/questions/267304/remove-spacing-below-above-top-bottomrule/267308). On the downside, alternative colored rows for a better row separation are harder to implement with `booktabs`. Considering these instructions [[1]](http://tex.stackexchange.com/questions/267304/remove-spacing-below-above-top-bottomrule), my LaTeX table code is presented in the following:
 
 {% gist 8242f90c61ab1acd6f97 %}
 
-** General Table Look Improvements **
+## General Table Look Improvements
 
 This paragraph presents various possibilities to enhance the looking of LaTeX tables.
 First, too long table captions are by default poorly rendered which can be resolved through the using of the `caption` package [[7]](http://tex.stackexchange.com/questions/16128/how-to-force-to-center-the-table-captions):
@@ -82,7 +82,7 @@ Lastly, the `cmidrule` needs an adaption if you have a very long table header, s
 
 {% gist c0e7348485e8099dcfdc %}
 
-** Tikz Diagrams **
+## Tikz Diagrams
 
 Using `tikz` is a great oppurtunity to include good-looking diagrams into your LaTeX document.
 Saying that, a few settings can improve the look even more.
@@ -97,7 +97,7 @@ Regarding these two fixes, my final design of bars was also influenced by these 
 
 {% gist 5a303fe46cb27e8363a1 %}
 
-** PDF Compilation Speed Up **
+## PDF Compilation Speed Up
 
 After approaching the look enhancement, this paragraph lists the speed up opportunities for the compilation step.
 
@@ -136,7 +136,7 @@ Beside that, the compilation command setup of LaTeX can be further improved [[22
 
 The split-up of documents in subdocuments and their isolated compilation enables as well as the avoidance of the `input` command a further performance boost [[23]](http://www.howtotex.com/tips-tricks/faster-latex-part-i-compile-only-parts/). Also other compilation setups like `pdflatex -interaction=batchmode` are considered to enhance the compilation time [[24]](http://tex.stackexchange.com/questions/8791/speeding-up-latex-compilation). The `syntonly` package [[25]](http://www.howtotex.com/tips-tricks/faster-latex-part-iii-check-syntax-only/) and a precompiled preamble accelerate the speed as well [[26]](http://www.howtotex.com/tips-tricks/faster-latex-part-iv-use-a-precompiled-preamble/), but I haven't utilized them in my thesis. In general, use as few packages as possible and only include required packages because useless packages can slow down the compilation or cause problems! 
 
-** Code Listing Formatting **
+## Code Listing Formatting
 
 Since I was studying computer science, code was an essential part of my thesis.
 You can take advantage of the `listings` package to present it.
@@ -148,7 +148,7 @@ I used the following code listing settings for my thesis:
 
 {% gist 26c317c01cb8d7c4f78d %}
 
-** Miscellaneous Simple Improvements **
+## Miscellaneous Simple Improvements
 
 The last paragraph describes various simple enhancements for your thesis.
 If you want to change the colors of your hyperlinks, e.g. to improve the readability, you just need to apply different settings [[29]](http://tex.stackexchange.com/questions/50747/options-for-appearance-of-links-in-hyperref/50754#50754).
