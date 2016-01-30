@@ -97,7 +97,7 @@ Regarding these two fixes, my final design of bars was also influenced by these 
 
 {% gist 5a303fe46cb27e8363a1 %}
 
-## PDF Compilation Speed Up
+## PDF Compilation Speedup
 
 After approaching the look enhancement, this paragraph lists the speed up opportunities for the compilation step.
 
