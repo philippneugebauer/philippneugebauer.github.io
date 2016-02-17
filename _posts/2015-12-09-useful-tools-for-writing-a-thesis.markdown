@@ -161,7 +161,7 @@ To enhance the look of footnote cites and to indent more line citations, LaTeX s
     \renewcommand\@makefntext[1]{\leftskip=2em\hskip-2em\@makefnmark#1}
     \makeatother
 
-Moreover, the `pisoft` package provides nice looking Xs and ticks [[30]](https://www.ctan.org/pkg/pifont?lang=en). Thanks to @cedricroeck for the tip!
+Moreover, the `pisoft` package provides nice looking Xs and ticks [[30]](https://www.ctan.org/pkg/pifont?lang=en). Thanks to [croeck](https://github.com/croeck) for the tip!
 If you need to have a footnote at different places and to avoid duplicates,`footnotemark` can help you out
 [[31]](http://tex.stackexchange.com/questions/35043/reference-different-places-to-the-same-footnote/35044#35044).
 Line breaks in footnotes can be resolved for urls by `usepackage[hyphens]{url}` [[32]](http://tex.stackexchange.com/questions/23394/url-linebreak-in-footnote).
