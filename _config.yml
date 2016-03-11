@@ -10,7 +10,7 @@ url: http://blog.philippneugebauer.net
 twitter_username: ppneugebauer
 github_username:  philippneugebauer
 permalink: "/:title"
-
+gems:      [jekyll-paginate]
 # Build settings
 markdown: kramdown
 #highlighter: rouge
