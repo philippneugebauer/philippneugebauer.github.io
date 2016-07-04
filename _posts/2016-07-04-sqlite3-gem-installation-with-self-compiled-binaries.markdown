@@ -10,7 +10,7 @@ Since there exist many solutions which did not work out on my environments, I pr
 
 First, you need to download `sqlite-autoconf-xxx.tar.gz` and `sqlite-dll-winyy-xyy-xxx.zip` from [sqlite.org](www.sqlite.org).
 In the second step, you extract both files to the same directory on your system but you also need to copy the `dll files` to a folder contained by your `system $path`.
-Next, you open a linux terminal in your sqlite folder, e.g. the `mysys.bat` in your `DevKit` folder.
+Next, you open a linux terminal in your sqlite folder, e.g. the `msys.bat` in your `DevKit` folder.
 Then, you execute the three following commands which compile the sqlite3 code:
 
 ```
