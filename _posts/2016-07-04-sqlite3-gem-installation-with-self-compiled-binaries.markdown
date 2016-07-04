@@ -25,7 +25,7 @@ After the successful compilation, you can install your sqlite3 gem whereby `path
 gem install sqlite3 --platform=ruby -- --with-sqlite3-include=path --with-sqlite3-lib=path --with-sqlite3-dir=path
 ```
 
-###Errors
+### Errors
 
 If you get a `checking for sqlite3_libversion_number() in -lsqlite3... no` error, you need to add `--with-sqlite3-dir=path` to gem installation command.
 
