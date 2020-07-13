@@ -1,10 +1,10 @@
 # Site settings
-title: Philipp Neugebauer's developer blog
+title: Philipp Neugebauer's blog
 email: ppn@philippneugebauer.net
 description: >
   Rails and Git enthusiast
 baseurl: ""
-url: http://blog.philippneugebauer.net
+url: http://philippneugebauer.net
 twitter_username: ppneugebauer
 github_username:  philippneugebauer
 permalink: "/:title"
