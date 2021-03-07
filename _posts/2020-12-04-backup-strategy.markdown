@@ -17,8 +17,8 @@ In addition to the cloud backups, I also bought a Raspberry Pi, connected my old
 In detail, the setup of tools on the Pi is described in the following blog posts:
 <https://jeremycollins.net/using-a-raspberry-pi-as-a-nas-mac-os-time-machine-2020-edition>
 <https://gist.github.com/jhanzo/f1df54b303307c5a6350de0ca3abd5af>
-https://linuxconfig.org/how-to-setup-sftp-server-on-ubuntu-20-04-focal-fossa-linux
-https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-18-04
+<https://linuxconfig.org/how-to-setup-sftp-server-on-ubuntu-20-04-focal-fossa-linux>
+<https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-18-04>
 
 Furthermore, I deactivated the automated backups from Time Machine and use the [Time Machine Editor](https://tclementdev.com/timemachineeditor/) to ensure weekly backups.
 
