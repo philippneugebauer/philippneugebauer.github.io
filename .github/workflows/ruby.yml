@@ -1,0 +1,41 @@
+name: Update Gems
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 1 * *' 
+  workflow_dispatch:
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install GitHub Pages dependencies
+        run: |
+          gem install bundler
+          bundle install
+          bundle update
+
+      - name: Check for changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "ppn@philippneugebauer.net"
+          git add Gemfile.lock
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Gemfile.lock dependencies"
+            git push
+          fi
