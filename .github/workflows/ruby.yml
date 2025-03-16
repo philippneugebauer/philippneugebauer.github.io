@@ -20,7 +20,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ env.RUBY_VERSION }}
+          ruby-version: ${{ RUBY_VERSION }}
           bundler-cache: true
 
       - name: Install GitHub Pages dependencies
