@@ -15,11 +15,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
 
       - name: Install GitHub Pages dependencies
